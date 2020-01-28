@@ -17,7 +17,6 @@ Alexander Foremny ([@aforemny](https://github.com/aforemny))
 1. The Elm Architecture
 1. Outlook: Single Page Application
 1. Hannover Elm Language Meetup
-1. Resources
 
 Questions are always welcome!
 
@@ -110,8 +109,8 @@ update msg model =
 ## View
 
 ```elm
--- import Html exposing (button, div, text)
--- import Html.Events exposing (onClick)
+import Html exposing (button, div, text)
+import Html.Events exposing (onClick)
 
 view model =
     div []
@@ -127,8 +126,6 @@ view model =
 
 ```elm
 import Browser
-import Html.Events exposing (onClick)
-import Html exposing (button, div, text)
 
 main =
     Browser.sandbox { init = init, update = update, view = view }
@@ -140,7 +137,7 @@ main =
 
 We did not use any **side-effects** in our program. In fact, it would not have been possible: Elm programs are *generally free of side-effects*.
 
-We have not seen the **joy of writing such a program**. Many exciting features were not covered.
+We have not seen the **joy of writing** such a program. Many exciting features were not covered.
 
 ---
 
@@ -223,12 +220,12 @@ We would be more than happy to provide guidance on learning the language, as wel
 
 ---
 
-## Questions
+# Questions
 
 Thank you for your time!
 **Do you have any questions?**
 
-## Resources
+# Resources
 
 - [Meetup: Hannover Elm Language Meetup](https://meetup.com/Hannover-Elm-Language-Meetup)
 - [Elm website](https://elm-lang.org), [Elm Guide](https://guide.elm-lang.org)
